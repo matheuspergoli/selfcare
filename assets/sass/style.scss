@@ -10,7 +10,7 @@ $background-footer: #F9F9F9;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: clamp(1rem, 5vw, 2rem);
+  padding: clamp(1rem, 5vw, 2.5rem);
 }
 
 .logo {
@@ -45,7 +45,7 @@ $background-footer: #F9F9F9;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: clamp(1rem, 5vw, 2rem);
+  padding: clamp(1rem, 5vw, 2.5rem);
   border-bottom: 1px solid $linha-divisoria;
 
   p {
@@ -56,5 +56,45 @@ $background-footer: #F9F9F9;
 
   span {
     font-size: 1.5rem;
+  }
+}
+
+.produtos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding: clamp(1rem, 5vw, 2.5rem);
+}
+
+.produto {
+  flex: 0 1 43rem;
+}
+
+.produto-img {
+  width: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}
+
+.desc-produto {
+  padding: 1rem 0;
+  font-weight: bold;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+}
+
+.valor {
+  font-weight: bold;
+  font-size: clamp(2rem, 5vw, 2rem);
+
+  span {
+    color: $verde;
   }
 }
