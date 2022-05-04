@@ -109,6 +109,8 @@ $background-footer: #F9F9F9;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5rem;
   padding: clamp(1rem, 5vw, 2.5rem);
   border-bottom: 1px solid $linha-divisoria;
 }
@@ -123,19 +125,39 @@ $background-footer: #F9F9F9;
   }
 }
 
-.newsletter {
-  label {
-    display: block;
+.email {
+
+  @include media(648px) {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  p {
     font-weight: bold;
     font-size: 1.6rem;
     margin-bottom: 1.5rem;
+  }
+}
+
+.newsletter {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include media(648px) {
+    gap: 1rem;
   }
 
   input {
     width: 30rem;
     padding: 1rem;
-    border-radius: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
     border: 1px solid $linha-divisoria;
+
+    @include media(648px) {
+      width: 100%;
+      border-radius: 2px;
+    }
   }
 
   button {
@@ -143,8 +165,43 @@ $background-footer: #F9F9F9;
     font-size: 1.6rem;
     font-weight: bold;
     padding: 1rem 2rem;
-    border-radius: 2px;
     background-color: $verde;
     color: $background-footer;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+
+    @include media(648px) {
+      width: 100%;
+      border-radius: 2px;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(1rem, 5vw, 2.5rem);
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  & * {
+    color: $verde;
+    font-size: 3rem;
+  }
+}
+
+.cartoes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  img {
+    display: block;
+    width: 4rem;
   }
 }

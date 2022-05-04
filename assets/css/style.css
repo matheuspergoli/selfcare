@@ -104,6 +104,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5rem;
   padding: clamp(1rem, 5vw, 2.5rem);
   border-bottom: 1px solid #A5A1A1;
 }
@@ -116,24 +118,80 @@ html {
   font-size: 1.6rem;
 }
 
-.newsletter label {
-  display: block;
+@media (max-width: 648px) {
+  .email {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.email p {
   font-weight: bold;
   font-size: 1.6rem;
   margin-bottom: 1.5rem;
 }
+
+.newsletter {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 648px) {
+  .newsletter {
+    gap: 1rem;
+  }
+}
 .newsletter input {
   width: 30rem;
   padding: 1rem;
-  border-radius: 2px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
   border: 1px solid #A5A1A1;
+}
+@media (max-width: 648px) {
+  .newsletter input {
+    width: 100%;
+    border-radius: 2px;
+  }
 }
 .newsletter button {
   border: none;
   font-size: 1.6rem;
   font-weight: bold;
   padding: 1rem 2rem;
-  border-radius: 2px;
   background-color: #5CA720;
   color: #F9F9F9;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+@media (max-width: 648px) {
+  .newsletter button {
+    width: 100%;
+    border-radius: 2px;
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(1rem, 5vw, 2.5rem);
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.social-media * {
+  color: #5CA720;
+  font-size: 3rem;
+}
+
+.cartoes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.cartoes img {
+  display: block;
+  width: 4rem;
 }/*# sourceMappingURL=style.css.map */
