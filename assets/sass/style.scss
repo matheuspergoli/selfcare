@@ -98,3 +98,53 @@ $background-footer: #F9F9F9;
     color: $verde;
   }
 }
+
+.footer {
+  margin-top: 10rem;
+  background-color: $background-footer;
+  border-top: 1px solid $linha-divisoria;
+}
+
+.info-contato {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(1rem, 5vw, 2.5rem);
+  border-bottom: 1px solid $linha-divisoria;
+}
+
+.contatos {
+  a {
+    display: block;
+    color: $preto;
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+}
+
+.newsletter {
+  label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  input {
+    width: 30rem;
+    padding: 1rem;
+    border-radius: 2px;
+    border: 1px solid $linha-divisoria;
+  }
+
+  button {
+    border: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    background-color: $verde;
+    color: $background-footer;
+  }
+}

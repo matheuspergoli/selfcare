@@ -92,4 +92,48 @@ html {
 }
 .valor span {
   color: #5CA720;
+}
+
+.footer {
+  margin-top: 10rem;
+  background-color: #F9F9F9;
+  border-top: 1px solid #A5A1A1;
+}
+
+.info-contato {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(1rem, 5vw, 2.5rem);
+  border-bottom: 1px solid #A5A1A1;
+}
+
+.contatos a {
+  display: block;
+  color: #161616;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.newsletter label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+.newsletter input {
+  width: 30rem;
+  padding: 1rem;
+  border-radius: 2px;
+  border: 1px solid #A5A1A1;
+}
+.newsletter button {
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  background-color: #5CA720;
+  color: #F9F9F9;
 }/*# sourceMappingURL=style.css.map */
